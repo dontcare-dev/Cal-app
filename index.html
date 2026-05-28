@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weare.kitty.devs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <h1>weare.kitty.devs</h1>
+            <p>Analysis of food products</p>
+        </header>
+
+        <main>
+            <!-- Product Analysis Card -->
+            <section class="card">
+                <div class="product-header">
+                    <div class="img-placeholder">Image</div>
+                    <div class="product-info">
+                        <h2>Tangy Cheese Tortilla Chips</h2>
+                        <p class="brand">Doritos</p>
+                        <div class="score bad">
+                            <span class="dot red"></span>
+                            <div>
+                                <strong>21/100</strong>
+                                <span>Bad</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Negatives -->
+                <h3 class="section-title">Negatives</h3>
+                <ul class="trait-list">
+                    <li>
+                        <div class="trait-info">
+                            <strong>Additives</strong>
+                            <span>Contains additives to avoid</span>
+                        </div>
+                        <div class="trait-score">9 <span class="dot red"></span></div>
+                    </li>
+                    <li>
+                        <div class="trait-info">
+                            <strong>Energy</strong>
+                            <span>A bit too caloric</span>
+                        </div>
+                        <div class="trait-score">501 kcal <span class="dot orange"></span></div>
+                    </li>
+                </ul>
+
+                <!-- Positives -->
+                <h3 class="section-title">Positives</h3>
+                <ul class="trait-list">
+                    <li>
+                        <div class="trait-info">
+                            <strong>Fibre</strong>
+                            <span>Excellent amount of fibre</span>
+                        </div>
+                        <div class="trait-score">5.6g <span class="dot green"></span></div>
+                    </li>
+                    <li>
+                        <div class="trait-info">
+                            <strong>Protein</strong>
+                            <span>Some protein</span>
+                        </div>
+                        <div class="trait-score">6.5g <span class="dot green"></span></div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Recommendations Section -->
+            <h2 class="main-title">Recommendations</h2>
+            
+            <section class="card rec-card">
+                <div class="rec-item">
+                    <div class="icon cross">✕</div>
+                    <div class="img-placeholder small">Img</div>
+                    <p>Strengthening Shampoo</p>
+                    <span class="status bad"><span class="dot red"></span> Bad</span>
+                </div>
+                <div class="arrow">→</div>
+                <div class="rec-item">
+                    <div class="icon check">✓</div>
+                    <div class="img-placeholder small">Img</div>
+                    <p>Hydration Shampoo</p>
+                    <span class="status good"><span class="dot green"></span> Excellent</span>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
