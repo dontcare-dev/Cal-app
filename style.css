@@ -1,0 +1,215 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #000000; /* Deep black background */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+/* Header */
+.app-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.app-header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.app-header p {
+    color: #888;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Cards */
+.card {
+    background-color: #111111; /* Dark gray for cards to stand out from black bg */
+    border: 1px solid #222;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Product Header */
+.product-header {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.img-placeholder {
+    width: 80px;
+    height: 100px;
+    background-color: #222;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 12px;
+}
+
+.img-placeholder.small {
+    width: 60px;
+    height: 80px;
+    margin: 10px auto;
+}
+
+.product-info h2 {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 4px;
+}
+
+.brand {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.score div {
+    display: flex;
+    flex-direction: column;
+}
+
+.score strong {
+    font-size: 18px;
+}
+
+.score span {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Lists */
+.section-title {
+    font-size: 16px;
+    margin: 20px 0 10px 0;
+    border-bottom: 1px solid #222;
+    padding-bottom: 8px;
+}
+
+.main-title {
+    font-size: 24px;
+    margin: 30px 0 15px 0;
+}
+
+.trait-list {
+    list-style: none;
+}
+
+.trait-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #222;
+}
+
+.trait-list li:last-child {
+    border-bottom: none;
+}
+
+.trait-info strong {
+    display: block;
+    font-size: 15px;
+}
+
+.trait-info span {
+    font-size: 13px;
+    color: #888;
+}
+
+.trait-score {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Status Indicators */
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.red { background-color: #ff453a; }
+.dot.orange { background-color: #ff9f0a; }
+.dot.green { background-color: #32d74b; }
+
+/* Recommendations Layout */
+.rec-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.rec-item {
+    flex: 1;
+    position: relative;
+}
+
+.rec-item p {
+    font-size: 13px;
+    color: #ccc;
+    margin-bottom: 5px;
+    height: 32px; /* keeps text aligned even if titles wrap */
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.arrow {
+    color: #555;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: white;
+}
+
+.icon.cross { background-color: #ff453a; }
+.icon.check { background-color: #32d74b; }
